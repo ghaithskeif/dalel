@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_8/core/utils/app_assets.dart';
+import 'package:flutter_application_8/core/routes/app_router.dart';
 
 
 void main() {
@@ -11,14 +11,14 @@ class Dalel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      // theme: ThemeData.dark(),
-      // title: 'Dalel',
-      home: Scaffold(
-        body: Center(
-          child: Image.asset(AppAssets.imagesOnBoarding1),
-        ),
-      )
+    return MaterialApp.router(
+      routerConfig: router,
+      debugShowCheckedModeBanner: false,
     );
   }
 }
+
+
+
+
+
